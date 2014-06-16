@@ -142,6 +142,7 @@ From **features_info.txt**:
 > tBodyAccJerkMean
 > tBodyGyroMean
 > tBodyGyroJerkMean
+
 ## tidy_data_1.txt
 The specified requirements for this data set were:
 
