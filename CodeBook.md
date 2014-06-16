@@ -142,18 +142,6 @@ From **features_info.txt**:
 > tBodyAccJerkMean
 > tBodyGyroMean
 > tBodyGyroJerkMean
-
-
-
-
-
-
-
-
-
-
-
-
 ## tidy_data_1.txt
 The specified requirements for this data set were:
 
@@ -164,12 +152,21 @@ The specified requirements for this data set were:
 
 This data set was generated on June 16th, 2014, by running the script in the accompanying **run_analysis.R** file in R version 3.0.3.
 ### Transformations
-The following transformations were applied to the original data set.
-### Feature list
+The following transformations were applied to the original data set:
+#### Merged Training and Test Data Sets
+The contents fo the following original files were concatenated together:
+* **X**: Measurements for each observation: train/X_train.txt and test/X_test.txt
+* **Y**: The activity code for each observation: train/y_train.txt and test/y_test.txt
+* **subject** The subjects perfoming each observed activity: train/subject_train.txt and train/subject_train.txt
+#### Filtered Measurements
+#### Descriptive Activity Values 
+#### Descriptive Measurement Names
+ 
+### Measurement list
 
 ## tidy_data_2.txt  
 This dataset is a further summarisation of  **tidy_data_1.txt**.  
 The specified requirement was to create a second, independent tidy data set with the average of each variable for each activity and each subject.
 This data set was generated on June 16th, 2014, by running the script in the accompanying **run_analysis.R** file in R version 3.0.3.
 ### Transformations
-### Feature list
+### Measurement list
