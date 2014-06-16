@@ -160,11 +160,11 @@ create_summary_dataframe <- function(df){
     ## We're using the plyr package to summarise the data set
   library(plyr)
   
-    ## Create a new data frame with the average of each column, except $activity, grouped by $subject_id
-  new_df <- ddply(df[,c(1:66,68)],"subject_id", colwise(mean))
+    ## Create a new data frame with the average of each column, grouped by $activity and $subject_id
+  new_df <- ddply(df,c("activity", "subject_id"), colwise(mean))
   
-    ## Modify the column names of the new dataframe, except $subject_id, prefixing the original names with "average."
-  colnames(new_df)[2:67] <- paste("average", colnames(new_df)[2:67], sep=".")
+    ## Modify the column names of the new dataframe, except $activity and $subject_id, prefixing the original names with "average."
+  colnames(new_df)[3:68] <- paste("average", colnames(new_df)[2:67], sep=".")
   new_df
   
 }

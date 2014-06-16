@@ -7,7 +7,7 @@ This is the peer assessment project for the  "Getting and Cleaning Data" course.
 
 The components of this project are:
 * README.md - this file
-* CodeBook.md - a code book describesing the data, its variables any transformations that were performed to clean up the data.
+* CodeBook.md - a code book describing the data, its variables any transformations that were performed to clean up the data.
 * run_analysis.R - An R script file containing all functions that were used to clean the data set. This is described in more detail below
  
 ## run_analysis.R
@@ -78,7 +78,7 @@ The original UCI HAR activity labels are fit for purpose as they are.
 
 10. Create the second tidy dataset.  
 **clean _data()** calls **create_summary_dataframe()**, passing the data frame containing the first tidy dataset.  
-**create_summary_dataframe()** uses the **plyr** package to create a new data frame with the average of each column, except $activity, grouped by $subject_id. It then modifies the column names of this new dataframe, except $subject_id, prefixing the original names with "average." Finally it returns the new data frame to the calling function.
+**create_summary_dataframe()** uses the **plyr** package to create a new data frame with the average of each column, grouped by the combination of $activity and $subject_id. It then modifies the column names of this new dataframe, except $subject_id, prefixing the original names with "average." Finally it returns the new data frame to the calling function.
 
 11. Create write out the second tidy dataset  
 **clean _data()** uses  write.table() to writes this out to a file called "tidy_data_2.txt" in the current working directory.
