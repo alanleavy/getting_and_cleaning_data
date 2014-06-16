@@ -18,7 +18,7 @@ The data cleaning functions in run_analysis.R assume that the UCI HAR dataset ha
 If this is not the case then the **download_dataset()** function may be called. This function:
     * downloads the dataset from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip,
     * unzips into a timestamped directory under the current working directory (e.g. "UCI_HAR_Dataset__2014-06-16") and 
-    * makes this new directory the current working directory.  - The unzipped 'UCI HAR Dataset' directory is now within the current working directory and data cleaning functions can now be run.  
+    * makes this new directory the current working directory.  - The unzipped 'UCI HAR Dataset' directory is now within the current working directory and data cleaning process can now be run.  
 
 2. _Run the data cleaning functions_  
 The main entry point for the data cleaning script is the function **clean_data()** which implelements the end-to-end process specified  for the project:
@@ -42,7 +42,7 @@ The main entry point for the data cleaning script is the function **clean_data()
     * **merge_subjects()** - reads "UCI HAR Dataset/train/subject_train.txt" and "UCI HAR Dataset/test/subject_test.txt", and concatenates them into a single dataframe which is returned to the calling function.
 
 2. Filter for just the features we're interested in (averages and standard deviations)  
-This is done by the function **select_features()**, which:
+This is done using the function **select_features()**, which:
     * reads in in the complete set of original feature names and column numbers from "UCI HAR Dataset/features.txt"
     * identifies which feature labels contain either "-std()" OR "-mean()
     * returns a dataframe with two columns: **V1** - the index of a features in the original dataset; **V2** - the corresponsing feature label from the original dataset. This data frame has one row for each of the features identified in the previous step.  
