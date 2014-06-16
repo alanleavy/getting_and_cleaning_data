@@ -34,7 +34,8 @@ The main entry point for the data cleaning script is the function **clean_data()
     * **tidy_data_2.txt** - the output of step 5 above
     
 ### Overview of the implementation of clean_data()
-**clean_data()** performs the following steps:  
+**clean_data()** performs the following steps:
+
 1. Merge the various components of the training and test datasets  
 this is performed by 3 sub functions:  
     * **merge_features()** - reads "UCI HAR Dataset/train/X_train.txt" and "UCI HAR Dataset/test/X_test.txt", and concatenates them into a single dataframe which is returned to the calling function.  
