@@ -277,7 +277,7 @@ It contains a header row and 180 data rows,  with 68 columns:
 | Order | Measure Name in tidy_data_2.txt |  Description | Units / Values |
 | ----- | --------------------------------------- | --------------------------- | --- |             
 | 1    |  activity                               |  The activity that was performed | WALKING<br> WALKING_UPSTAIRS<br> WALKING_DOWNSTAIRS<br> SITTING<br> STANDING<br> LAYING   | 
-| 2    |  subject_id                             |  The identifier of the subject who performed the activity | 1-30 |
+| 2    |  subject_id                             |  The identifier of the subject<br>who performed the activity | 1-30 |
 | 3   |                   average.time.body_acc.mean.x  |                     Average of<br>time.body_acc.mean.x <br>    by activity and subject_id |  units unchanged   |
 | 4   |                   average.time.body_acc.mean.y  |                     Average of<br>time.body_acc.mean.y <br>    by activity and subject_id |  units unchanged   |
 | 5   |                   average.time.body_acc.mean.z  |                     Average of<br>time.body_acc.mean.z <br>    by activity and subject_id |  units unchanged   |
