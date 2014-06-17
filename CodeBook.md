@@ -143,6 +143,8 @@ From **features_info.txt**:
 > tBodyGyroMean
 > tBodyGyroJerkMean
 
+------------------------------
+
 ## tidy_data_1.txt
 The specified requirements for this data set were:
 
@@ -255,6 +257,7 @@ It contains a header row and 12099 data rows,  with 68 columns:
 | 66   |  frequency.body_body_gyro_jerk_mag.std  |  From original dataset:<br> fBodyBodyGyroJerkMag-std() <br>Original index: 543 |  units unchanged   |
 | 67   |  activity                               |  The activity that was performed | WALKING<br> WALKING_UPSTAIRS<br> WALKING_DOWNSTAIRS<br> SITTING<br> STANDING<br> LAYING   | 
 | 68   |  subject_id                             |  The identifier of the subject who performed the activity | 1-30 |
+
 --------------------------------------------------------------------------------                                           
 
 ## tidy_data_2.txt  
@@ -270,6 +273,7 @@ These derrived measures were named based on the make of the measure averaged, by
 ### Measurement list
 This transformed dataset was output as a tab separated file **tidy_data_2.txt**.
 It contains a header row and 180 data rows,  with 68 columns:
+
 | Order | Measure Name in tidy_data_2.txt |  Description | Units / Values |
 | ----- | --------------------------------------- | --------------------------- | --- |             
 | 1    |  activity                               |  The activity that was performed | WALKING<br> WALKING_UPSTAIRS<br> WALKING_DOWNSTAIRS<br> SITTING<br> STANDING<br> LAYING   | 
@@ -340,4 +344,3 @@ It contains a header row and 180 data rows,  with 68 columns:
 | 66   |       average.frequency.body_body_gyro_mag.std  |        Average of frequency.body_body_gyro_mag.stby activity and subject_id |  units unchanged   |
 | 67   | average.frequency.body_body_gyro_jerk_mag.mean  |  Average of frequency.body_body_gyro_jerk_mag.meaby activity and subject_id |  units unchanged   |
 | 68   |  average.frequency.body_body_gyro_jerk_mag.std  | Average of frequency.body_body_gyro_jerk_mag.std by activity and subject_id |  units unchanged   |
-------------------------------
