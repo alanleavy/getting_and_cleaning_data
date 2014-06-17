@@ -161,20 +161,24 @@ The contents fo the following original files were concatenated together:
 * **subject** The subjects perfoming each observed activity: train/subject_train.txt and train/subject_train.txt
 
 #### Descriptive Measurement Names  
-Discriptive measurement names were added to the data set **X**
+Discriptive measurement names were added to the main data set **X**
 These were based on the original labels provided  in activity_labels.txt.
 The following transformations were applied:
- * removing "()" to avoid possible confusion with fucntion calls
+ * removing "()" to avoid possible confusion with function calls
  * replacing "-" with "." to avoid possible confusion with subtraction
- * converting camel case to underscore, for ease of reading (e.g. fBodyBodyGyroJerkMag_std Vs f_body_body_gyro_jerk_mag_std)
+ * converting camel case to underscore, for ease of reading (e.g. fBodyBodyGyroJerkMag.std Vs f_body_body_gyro_jerk_mag.std)
  * replacing  the leading "t_" with "time."
  * replacing the leading "f_" with "freq."
+The resulting measurement names are detailed in the **Measurement List** section below.
   
 #### Descriptive Activity Values 
+A new column, **activity**, with descritive activity values corresponsing to the activity codes in **y**  was added to the main data set **X**.
+The values used were taken form the original dataset file activity_labels.txt. These labels were fit for purpose with out any additional transformation.
 
 #### Filtered Measurements
+The main data set **X** was filtered to remove all measurements that did not have either "-std()" or "-mean() in their original names, as specified in features.txt. 
  
-### Measurement list
+### Measurement List
 
 ## tidy_data_2.txt  
 This dataset is a further summarisation of  **tidy_data_1.txt**.  

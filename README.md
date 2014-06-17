@@ -51,7 +51,7 @@ This is done using the function **select_features()**, which:
 
 4. Create descriptive feature names, cleaned versions of the UCI HAR feature labels, and add them to our filtered data frame.  
 **clean _data()** calls **modify_feature_names()** to do this, passing the dataframe previously returned by **select_features()**. The new feature names are based on the original ones in "UCI HAR Dataset/features.txt", but **modify_feature_names()** modifies them to facilitate their usage for analysis within R, by:  
-    * removing "()" to avoid possible confusion with fucntion calls
+    * removing "()" to avoid possible confusion with function calls
     * replacing "-" with "." to avoid possible confusion with subtraction
     * converting camel case to underscore, for ease of reading (e.g. fBodyBodyGyroJerkMag_std Vs f_body_body_gyro_jerk_mag_std)
     * replacing  the leading "t_" with "time."
