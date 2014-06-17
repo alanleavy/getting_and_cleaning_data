@@ -278,15 +278,15 @@ It contains a header row and 180 data rows,  with 68 columns:
 | ----- | --------------------------------------- | --------------------------- | --- |             
 | 1    |  activity                               |  The activity that was performed | WALKING<br> WALKING_UPSTAIRS<br> WALKING_DOWNSTAIRS<br> SITTING<br> STANDING<br> LAYING   | 
 | 2    |  subject_id                             |  The identifier of the subject who performed the activity | 1-30 |
-| 3   |                   average.time.body_acc.mean.x  |                     Average of time.body_acc.mean.x <br>    by activity and subject_id |by activity and subject_id ||  units unchanged   |
-| 4   |                   average.time.body_acc.mean.y  |                     Average of time.body_acc.mean.y <br>    by activity and subject_id |by activity and subject_id ||  units unchanged   |
-| 5   |                   average.time.body_acc.mean.z  |                     Average of time.body_acc.mean.z <br>    by activity and subject_id |by activity and subject_id ||  units unchanged   |
-| 6   |                    average.time.body_acc.std.x  |                      Average of time.body_acc.std.x <br>    by activity and subject_id |by activity and subject_id ||  units unchanged   |
-| 7   |                    average.time.body_acc.std.y  |                      Average of time.body_acc.std.y <br>    by activity and subject_id |by activity and subject_id ||  units unchanged   |
-| 8   |                    average.time.body_acc.std.z  |                      Average of time.body_acc.std.z <br>    by activity and subject_id |by activity and subject_id ||  units unchanged   |
-| 9   |                average.time.gravity_acc.mean.x  |                  Average of time.gravity_acc.mean.x <br>    by activity and subject_id |by activity and subject_id ||  units unchanged   |
-| 10  |                average.time.gravity_acc.mean.y  |                  Average of time.gravity_acc.mean.y <br>    by activity and subject_id |by activity and subject_id ||  units unchanged   |
-| 11  |                average.time.gravity_acc.mean.z  |                  Average of time.gravity_acc.mean.z <br>    by activity and subject_id |by activity and subject_id ||  units unchanged   |
+| 3   |                   average.time.body_acc.mean.x  |                     Average of time.body_acc.mean.x <br>    by activity and subject_id |  units unchanged   |
+| 4   |                   average.time.body_acc.mean.y  |                     Average of time.body_acc.mean.y <br>    by activity and subject_id |  units unchanged   |
+| 5   |                   average.time.body_acc.mean.z  |                     Average of time.body_acc.mean.z <br>    by activity and subject_id |  units unchanged   |
+| 6   |                    average.time.body_acc.std.x  |                      Average of time.body_acc.std.x <br>    by activity and subject_id |  units unchanged   |
+| 7   |                    average.time.body_acc.std.y  |                      Average of time.body_acc.std.y <br>    by activity and subject_id |  units unchanged   |
+| 8   |                    average.time.body_acc.std.z  |                      Average of time.body_acc.std.z <br>    by activity and subject_id |  units unchanged   |
+| 9   |                average.time.gravity_acc.mean.x  |                  Average of time.gravity_acc.mean.x <br>    by activity and subject_id |  units unchanged   |
+| 10  |                average.time.gravity_acc.mean.y  |                  Average of time.gravity_acc.mean.y <br>    by activity and subject_id |  units unchanged   |
+| 11  |                average.time.gravity_acc.mean.z  |                  Average of time.gravity_acc.mean.z <br>    by activity and subject_id |  units unchanged   |
 | 12   |                 average.time.gravity_acc.std.x  |                   Average of time.gravity_acc.std.x<br>    by activity and subject_id |  units unchanged   |
 | 13   |                 average.time.gravity_acc.std.y  |                   Average of time.gravity_acc.std.y<br>    by activity and subject_id |  units unchanged   |
 | 14   |                 average.time.gravity_acc.std.z  |                   Average of time.gravity_acc.std.z<br>    by activity and subject_id |  units unchanged   |
