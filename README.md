@@ -80,5 +80,5 @@ The original UCI HAR activity labels are fit for purpose as they are.
 **clean _data()** calls **create_summary_dataframe()**, passing the data frame containing the first tidy dataset.  
 **create_summary_dataframe()** uses the **plyr** package to create a new data frame with the average of each column, grouped by the combination of $activity and $subject_id. It then modifies the column names of this new dataframe, except $activity and $subject_id, prefixing the original names with "average." Finally it returns the new data frame to the calling function.
 
-11. Create write out the second tidy dataset  
+11. Write out the second tidy dataset  
 **clean _data()** uses  write.table() to writes this out to a file called "tidy_data_2.txt" in the current working directory.
