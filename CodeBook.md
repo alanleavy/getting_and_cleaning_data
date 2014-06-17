@@ -185,6 +185,7 @@ A new column, **subject_id**, was added to the main data set **X**. It's values 
 The transformed dataset **X** was output as a tab separated file **tidy_data_1.txt**.
 It contains a header row and 12099 data rows,  with 68 columns:
 
+| Measure Name in tidy_data_1.txt |  Original Measure Label |Original Measure Index |
 -------------------------------------------------------------------------------
 |                   time.body_acc.mean.x  |           tBodyAcc-mean()-X |   1 |
 |                   time.body_acc.mean.y  |           tBodyAcc-mean()-Y |   2 |
