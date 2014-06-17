@@ -186,7 +186,7 @@ The transformed dataset **X** was output as a tab separated file **tidy_data_1.t
 It contains a header row and 12099 data rows,  with 68 columns:
 
 | Measure Name in tidy_data_1.txt |  Original Measure Label |Original Measure Index |
--------------------------------------------------------------------------------
+| --------------------------------------- | --------------------------- | --- |
 |                   time.body_acc.mean.x  |           tBodyAcc-mean()-X |   1 |
 |                   time.body_acc.mean.y  |           tBodyAcc-mean()-Y |   2 |
 |                   time.body_acc.mean.z  |           tBodyAcc-mean()-Z |   3 |
