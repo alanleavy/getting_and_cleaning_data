@@ -187,74 +187,74 @@ It contains a header row and 12099 data rows,  with 68 columns:
 
 | Order | Measure Name in tidy_data_1.txt |  Description | Units / Values |
 | ----- | --------------------------------------- | --------------------------- | --- |
-| 1   |                   time.body_acc.mean.x  |           From original dataset: tBodyAcc-mean()-X <br>Original index:   1 |     |
-| 2   |                   time.body_acc.mean.y  |           From original dataset: tBodyAcc-mean()-Y <br>Original index:   2 |     |
-| 3   |                   time.body_acc.mean.z  |           From original dataset: tBodyAcc-mean()-Z <br>Original index:   3 |     |
-| 4   |                    time.body_acc.std.x  |            From original dataset: tBodyAcc-std()-X <br>Original index:   4 |     |
-| 5   |                    time.body_acc.std.y  |            From original dataset: tBodyAcc-std()-Y <br>Original index:   5 |     |
-| 6   |                    time.body_acc.std.z  |            From original dataset: tBodyAcc-std()-Z <br>Original index:   6 |     |
-| 7   |                time.gravity_acc.mean.x  |        From original dataset: tGravityAcc-mean()-X <br>Original index:  41 |     |
-| 8   |                time.gravity_acc.mean.y  |        From original dataset: tGravityAcc-mean()-Y <br>Original index:  42 |     |
-| 9   |                time.gravity_acc.mean.z  |        From original dataset: tGravityAcc-mean()-Z <br>Original index:  43 |     |
-| 10   |                 time.gravity_acc.std.x  |         From original dataset: tGravityAcc-std()-X <br>Original index:  44 |     |
-| 11   |                 time.gravity_acc.std.y  |         From original dataset: tGravityAcc-std()-Y <br>Original index:  45 |     |
-| 12   |                 time.gravity_acc.std.z  |         From original dataset: tGravityAcc-std()-Z <br>Original index:  46 |     |
-| 13   |              time.body_acc_jerk.mean.x  |       From original dataset: tBodyAccJerk-mean()-X <br>Original index:  81 |     |
-| 14   |              time.body_acc_jerk.mean.y  |       From original dataset: tBodyAccJerk-mean()-Y <br>Original index:  82 |     |
-| 15   |              time.body_acc_jerk.mean.z  |       From original dataset: tBodyAccJerk-mean()-Z <br>Original index:  83 |     |
-| 16   |               time.body_acc_jerk.std.x  |        From original dataset: tBodyAccJerk-std()-X <br>Original index:  84 |     |
-| 17   |               time.body_acc_jerk.std.y  |        From original dataset: tBodyAccJerk-std()-Y <br>Original index:  85 |     |
-| 18   |               time.body_acc_jerk.std.z  |        From original dataset: tBodyAccJerk-std()-Z <br>Original index:  86 |     |
-| 19   |                  time.body_gyro.mean.x  |          From original dataset: tBodyGyro-mean()-X <br>Original index: 121 |     |
-| 20   |                  time.body_gyro.mean.y  |          From original dataset: tBodyGyro-mean()-Y <br>Original index: 122 |     |
-| 21   |                  time.body_gyro.mean.z  |          From original dataset: tBodyGyro-mean()-Z <br>Original index: 123 |     |
-| 22   |                   time.body_gyro.std.x  |           From original dataset: tBodyGyro-std()-X <br>Original index: 124 |     |
-| 23   |                   time.body_gyro.std.y  |           From original dataset: tBodyGyro-std()-Y <br>Original index: 125 |     |
-| 24   |                   time.body_gyro.std.z  |           From original dataset: tBodyGyro-std()-Z <br>Original index: 126 |     |
-| 25   |             time.body_gyro_jerk.mean.x  |      From original dataset: tBodyGyroJerk-mean()-X <br>Original index: 161 |     |
-| 26   |             time.body_gyro_jerk.mean.y  |      From original dataset: tBodyGyroJerk-mean()-Y <br>Original index: 162 |     |
-| 27   |             time.body_gyro_jerk.mean.z  |      From original dataset: tBodyGyroJerk-mean()-Z <br>Original index: 163 |     |
-| 28   |              time.body_gyro_jerk.std.x  |       From original dataset: tBodyGyroJerk-std()-X <br>Original index: 164 |     |
-| 29   |              time.body_gyro_jerk.std.y  |       From original dataset: tBodyGyroJerk-std()-Y <br>Original index: 165 |     |
-| 30   |              time.body_gyro_jerk.std.z  |       From original dataset: tBodyGyroJerk-std()-Z <br>Original index: 166 |     |
-| 31   |                 time.body_acc_mag.mean  |          From original dataset: tBodyAccMag-mean() <br>Original index: 201 |     |
-| 32   |                  time.body_acc_mag.std  |           From original dataset: tBodyAccMag-std() <br>Original index: 202 |     |
-| 33   |              time.gravity_acc_mag.mean  |       From original dataset: tGravityAccMag-mean() <br>Original index: 214 |     |
-| 34   |               time.gravity_acc_mag.std  |        From original dataset: tGravityAccMag-std() <br>Original index: 215 |     |
-| 35   |            time.body_acc_jerk_mag.mean  |      From original dataset: tBodyAccJerkMag-mean() <br>Original index: 227 |     |
-| 36   |             time.body_acc_jerk_mag.std  |       From original dataset: tBodyAccJerkMag-std() <br>Original index: 228 |     |
-| 37   |                time.body_gyro_mag.mean  |         From original dataset: tBodyGyroMag-mean() <br>Original index: 240 |     |
-| 38   |                 time.body_gyro_mag.std  |          From original dataset: tBodyGyroMag-std() <br>Original index: 241 |     |
-| 39   |           time.body_gyro_jerk_mag.mean  |     From original dataset: tBodyGyroJerkMag-mean() <br>Original index: 253 |     |
-| 40   |            time.body_gyro_jerk_mag.std  |      From original dataset: tBodyGyroJerkMag-std() <br>Original index: 254 |     |
-| 41   |              frequency.body_acc.mean.x  |           From original dataset: fBodyAcc-mean()-X <br>Original index: 266 |     |
-| 42   |              frequency.body_acc.mean.y  |           From original dataset: fBodyAcc-mean()-Y <br>Original index: 267 |     |
-| 43   |              frequency.body_acc.mean.z  |           From original dataset: fBodyAcc-mean()-Z <br>Original index: 268 |     |
-| 44   |               frequency.body_acc.std.x  |            From original dataset: fBodyAcc-std()-X <br>Original index: 269 |     |
-| 45   |               frequency.body_acc.std.y  |            From original dataset: fBodyAcc-std()-Y <br>Original index: 270 |     |
-| 46   |               frequency.body_acc.std.z  |            From original dataset: fBodyAcc-std()-Z <br>Original index: 271 |     |
-| 47   |         frequency.body_acc_jerk.mean.x  |       From original dataset: fBodyAccJerk-mean()-X <br>Original index: 345 |     |
-| 48   |         frequency.body_acc_jerk.mean.y  |       From original dataset: fBodyAccJerk-mean()-Y <br>Original index: 346 |     |
-| 49   |         frequency.body_acc_jerk.mean.z  |       From original dataset: fBodyAccJerk-mean()-Z <br>Original index: 347 |     |
-| 50   |          frequency.body_acc_jerk.std.x  |        From original dataset: fBodyAccJerk-std()-X <br>Original index: 348 |     |
-| 51   |          frequency.body_acc_jerk.std.y  |        From original dataset: fBodyAccJerk-std()-Y <br>Original index: 349 |     |
-| 52   |          frequency.body_acc_jerk.std.z  |        From original dataset: fBodyAccJerk-std()-Z <br>Original index: 350 |     |
-| 53   |             frequency.body_gyro.mean.x  |          From original dataset: fBodyGyro-mean()-X <br>Original index: 424 |     |
-| 54   |             frequency.body_gyro.mean.y  |          From original dataset: fBodyGyro-mean()-Y <br>Original index: 425 |     |
-| 55   |             frequency.body_gyro.mean.z  |          From original dataset: fBodyGyro-mean()-Z <br>Original index: 426 |     |
-| 56   |              frequency.body_gyro.std.x  |           From original dataset: fBodyGyro-std()-X <br>Original index: 427 |     |
-| 57   |              frequency.body_gyro.std.y  |           From original dataset: fBodyGyro-std()-Y <br>Original index: 428 |     |
-| 58   |              frequency.body_gyro.std.z  |           From original dataset: fBodyGyro-std()-Z <br>Original index: 429 |     |
-| 59   |            frequency.body_acc_mag.mean  |          From original dataset: fBodyAccMag-mean() <br>Original index: 503 |     |
-| 60   |             frequency.body_acc_mag.std  |           From original dataset: fBodyAccMag-std() <br>Original index: 504 |     |
-| 61   |  frequency.body_body_acc_jerk_mag.mean  |  From original dataset: fBodyBodyAccJerkMag-mean() <br>Original index: 516 |     |
-| 62   |   frequency.body_body_acc_jerk_mag.std  |   From original dataset: fBodyBodyAccJerkMag-std() <br>Original index: 517 |     |
-| 63   |      frequency.body_body_gyro_mag.mean  |     From original dataset: fBodyBodyGyroMag-mean() <br>Original index: 529 |     |
-| 64   |       frequency.body_body_gyro_mag.std  |      From original dataset: fBodyBodyGyroMag-std() <br>Original index: 530 |     |
-| 65   | frequency.body_body_gyro_jerk_mag.mean  | From original dataset: fBodyBodyGyroJerkMag-mean() <br>Original index: 542 |     |
-| 66   |  frequency.body_body_gyro_jerk_mag.std  |  From original dataset: fBodyBodyGyroJerkMag-std() <br>Original index: 543 |     |
-| 67   |  activity                               |  The activity that was performed |    | 
-| 68   |  subject_id                             |  The identifier of the subject who performed the activity | WALKING<br> WALKING_UPSTAIRS<br> WALKING_DOWNSTAIRS<br> SITTING<br> STANDING<br> LAYING |
+| 1   |                   time.body_acc.mean.x  |           From original dataset:<br> tBodyAcc-mean()-X <br>Original index:   1 |  unchanged   |
+| 2   |                   time.body_acc.mean.y  |           From original dataset:<br> tBodyAcc-mean()-Y <br>Original index:   2 |  unchanged   |
+| 3   |                   time.body_acc.mean.z  |           From original dataset:<br> tBodyAcc-mean()-Z <br>Original index:   3 |  unchanged   |
+| 4   |                    time.body_acc.std.x  |            From original dataset:<br> tBodyAcc-std()-X <br>Original index:   4 |  unchanged   |
+| 5   |                    time.body_acc.std.y  |            From original dataset:<br> tBodyAcc-std()-Y <br>Original index:   5 |  unchanged   |
+| 6   |                    time.body_acc.std.z  |            From original dataset:<br> tBodyAcc-std()-Z <br>Original index:   6 |  unchanged   |
+| 7   |                time.gravity_acc.mean.x  |        From original dataset:<br> tGravityAcc-mean()-X <br>Original index:  41 |  unchanged   |
+| 8   |                time.gravity_acc.mean.y  |        From original dataset:<br> tGravityAcc-mean()-Y <br>Original index:  42 |  unchanged   |
+| 9   |                time.gravity_acc.mean.z  |        From original dataset:<br> tGravityAcc-mean()-Z <br>Original index:  43 |  unchanged   |
+| 10   |                 time.gravity_acc.std.x  |         From original dataset:<br> tGravityAcc-std()-X <br>Original index:  44 |  unchanged   |
+| 11   |                 time.gravity_acc.std.y  |         From original dataset:<br> tGravityAcc-std()-Y <br>Original index:  45 |  unchanged   |
+| 12   |                 time.gravity_acc.std.z  |         From original dataset:<br> tGravityAcc-std()-Z <br>Original index:  46 |  unchanged   |
+| 13   |              time.body_acc_jerk.mean.x  |       From original dataset:<br> tBodyAccJerk-mean()-X <br>Original index:  81 |  unchanged   |
+| 14   |              time.body_acc_jerk.mean.y  |       From original dataset:<br> tBodyAccJerk-mean()-Y <br>Original index:  82 |  unchanged   |
+| 15   |              time.body_acc_jerk.mean.z  |       From original dataset:<br> tBodyAccJerk-mean()-Z <br>Original index:  83 |  unchanged   |
+| 16   |               time.body_acc_jerk.std.x  |        From original dataset:<br> tBodyAccJerk-std()-X <br>Original index:  84 |  unchanged   |
+| 17   |               time.body_acc_jerk.std.y  |        From original dataset:<br> tBodyAccJerk-std()-Y <br>Original index:  85 |  unchanged   |
+| 18   |               time.body_acc_jerk.std.z  |        From original dataset:<br> tBodyAccJerk-std()-Z <br>Original index:  86 |  unchanged   |
+| 19   |                  time.body_gyro.mean.x  |          From original dataset:<br> tBodyGyro-mean()-X <br>Original index: 121 |  unchanged   |
+| 20   |                  time.body_gyro.mean.y  |          From original dataset:<br> tBodyGyro-mean()-Y <br>Original index: 122 |  unchanged   |
+| 21   |                  time.body_gyro.mean.z  |          From original dataset:<br> tBodyGyro-mean()-Z <br>Original index: 123 |  unchanged   |
+| 22   |                   time.body_gyro.std.x  |           From original dataset:<br> tBodyGyro-std()-X <br>Original index: 124 |  unchanged   |
+| 23   |                   time.body_gyro.std.y  |           From original dataset:<br> tBodyGyro-std()-Y <br>Original index: 125 |  unchanged   |
+| 24   |                   time.body_gyro.std.z  |           From original dataset:<br> tBodyGyro-std()-Z <br>Original index: 126 |  unchanged   |
+| 25   |             time.body_gyro_jerk.mean.x  |      From original dataset:<br> tBodyGyroJerk-mean()-X <br>Original index: 161 |  unchanged   |
+| 26   |             time.body_gyro_jerk.mean.y  |      From original dataset:<br> tBodyGyroJerk-mean()-Y <br>Original index: 162 |  unchanged   |
+| 27   |             time.body_gyro_jerk.mean.z  |      From original dataset:<br> tBodyGyroJerk-mean()-Z <br>Original index: 163 |  unchanged   |
+| 28   |              time.body_gyro_jerk.std.x  |       From original dataset:<br> tBodyGyroJerk-std()-X <br>Original index: 164 |  unchanged   |
+| 29   |              time.body_gyro_jerk.std.y  |       From original dataset:<br> tBodyGyroJerk-std()-Y <br>Original index: 165 |  unchanged   |
+| 30   |              time.body_gyro_jerk.std.z  |       From original dataset:<br> tBodyGyroJerk-std()-Z <br>Original index: 166 |  unchanged   |
+| 31   |                 time.body_acc_mag.mean  |          From original dataset:<br> tBodyAccMag-mean() <br>Original index: 201 |  unchanged   |
+| 32   |                  time.body_acc_mag.std  |           From original dataset:<br> tBodyAccMag-std() <br>Original index: 202 |  unchanged   |
+| 33   |              time.gravity_acc_mag.mean  |       From original dataset:<br> tGravityAccMag-mean() <br>Original index: 214 |  unchanged   |
+| 34   |               time.gravity_acc_mag.std  |        From original dataset:<br> tGravityAccMag-std() <br>Original index: 215 |  unchanged   |
+| 35   |            time.body_acc_jerk_mag.mean  |      From original dataset:<br> tBodyAccJerkMag-mean() <br>Original index: 227 |  unchanged   |
+| 36   |             time.body_acc_jerk_mag.std  |       From original dataset:<br> tBodyAccJerkMag-std() <br>Original index: 228 |  unchanged   |
+| 37   |                time.body_gyro_mag.mean  |         From original dataset:<br> tBodyGyroMag-mean() <br>Original index: 240 |  unchanged   |
+| 38   |                 time.body_gyro_mag.std  |          From original dataset:<br> tBodyGyroMag-std() <br>Original index: 241 |  unchanged   |
+| 39   |           time.body_gyro_jerk_mag.mean  |     From original dataset:<br> tBodyGyroJerkMag-mean() <br>Original index: 253 |  unchanged   |
+| 40   |            time.body_gyro_jerk_mag.std  |      From original dataset:<br> tBodyGyroJerkMag-std() <br>Original index: 254 |  unchanged   |
+| 41   |              frequency.body_acc.mean.x  |           From original dataset:<br> fBodyAcc-mean()-X <br>Original index: 266 |  unchanged   |
+| 42   |              frequency.body_acc.mean.y  |           From original dataset:<br> fBodyAcc-mean()-Y <br>Original index: 267 |  unchanged   |
+| 43   |              frequency.body_acc.mean.z  |           From original dataset:<br> fBodyAcc-mean()-Z <br>Original index: 268 |  unchanged   |
+| 44   |               frequency.body_acc.std.x  |            From original dataset:<br> fBodyAcc-std()-X <br>Original index: 269 |  unchanged   |
+| 45   |               frequency.body_acc.std.y  |            From original dataset:<br> fBodyAcc-std()-Y <br>Original index: 270 |  unchanged   |
+| 46   |               frequency.body_acc.std.z  |            From original dataset:<br> fBodyAcc-std()-Z <br>Original index: 271 |  unchanged   |
+| 47   |         frequency.body_acc_jerk.mean.x  |       From original dataset:<br> fBodyAccJerk-mean()-X <br>Original index: 345 |  unchanged   |
+| 48   |         frequency.body_acc_jerk.mean.y  |       From original dataset:<br> fBodyAccJerk-mean()-Y <br>Original index: 346 |  unchanged   |
+| 49   |         frequency.body_acc_jerk.mean.z  |       From original dataset:<br> fBodyAccJerk-mean()-Z <br>Original index: 347 |  unchanged   |
+| 50   |          frequency.body_acc_jerk.std.x  |        From original dataset:<br> fBodyAccJerk-std()-X <br>Original index: 348 |  unchanged   |
+| 51   |          frequency.body_acc_jerk.std.y  |        From original dataset:<br> fBodyAccJerk-std()-Y <br>Original index: 349 |  unchanged   |
+| 52   |          frequency.body_acc_jerk.std.z  |        From original dataset:<br> fBodyAccJerk-std()-Z <br>Original index: 350 |  unchanged   |
+| 53   |             frequency.body_gyro.mean.x  |          From original dataset:<br> fBodyGyro-mean()-X <br>Original index: 424 |  unchanged   |
+| 54   |             frequency.body_gyro.mean.y  |          From original dataset:<br> fBodyGyro-mean()-Y <br>Original index: 425 |  unchanged   |
+| 55   |             frequency.body_gyro.mean.z  |          From original dataset:<br> fBodyGyro-mean()-Z <br>Original index: 426 |  unchanged   |
+| 56   |              frequency.body_gyro.std.x  |           From original dataset:<br> fBodyGyro-std()-X <br>Original index: 427 |  unchanged   |
+| 57   |              frequency.body_gyro.std.y  |           From original dataset:<br> fBodyGyro-std()-Y <br>Original index: 428 |  unchanged   |
+| 58   |              frequency.body_gyro.std.z  |           From original dataset:<br> fBodyGyro-std()-Z <br>Original index: 429 |  unchanged   |
+| 59   |            frequency.body_acc_mag.mean  |          From original dataset:<br> fBodyAccMag-mean() <br>Original index: 503 |  unchanged   |
+| 60   |             frequency.body_acc_mag.std  |           From original dataset:<br> fBodyAccMag-std() <br>Original index: 504 |  unchanged   |
+| 61   |  frequency.body_body_acc_jerk_mag.mean  |  From original dataset:<br> fBodyBodyAccJerkMag-mean() <br>Original index: 516 |  unchanged   |
+| 62   |   frequency.body_body_acc_jerk_mag.std  |   From original dataset:<br> fBodyBodyAccJerkMag-std() <br>Original index: 517 |  unchanged   |
+| 63   |      frequency.body_body_gyro_mag.mean  |     From original dataset:<br> fBodyBodyGyroMag-mean() <br>Original index: 529 |  unchanged   |
+| 64   |       frequency.body_body_gyro_mag.std  |      From original dataset:<br> fBodyBodyGyroMag-std() <br>Original index: 530 |  unchanged   |
+| 65   | frequency.body_body_gyro_jerk_mag.mean  | From original dataset:<br> fBodyBodyGyroJerkMag-mean() <br>Original index: 542 |  unchanged   |
+| 66   |  frequency.body_body_gyro_jerk_mag.std  |  From original dataset:<br> fBodyBodyGyroJerkMag-std() <br>Original index: 543 |  unchanged   |
+| 67   |  activity                               |  The activity that was performed | WALKING<br> WALKING_UPSTAIRS<br> WALKING_DOWNSTAIRS<br> SITTING<br> STANDING<br> LAYING   | 
+| 68   |  subject_id                             |  The identifier of the subject who performed the activity | 1-30 |
 --------------------------------------------------------------------------------                                           
 
 ## tidy_data_2.txt  
