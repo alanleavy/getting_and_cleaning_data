@@ -157,11 +157,22 @@ The following transformations were applied to the original data set:
 #### Merged Training and Test Data Sets
 The contents fo the following original files were concatenated together:
 * **X**: Measurements for each observation: train/X_train.txt and test/X_test.txt
-* **Y**: The activity code for each observation: train/y_train.txt and test/y_test.txt
+* **y**: The activity code for each observation: train/y_train.txt and test/y_test.txt
 * **subject** The subjects perfoming each observed activity: train/subject_train.txt and train/subject_train.txt
-#### Filtered Measurements
+
+#### Descriptive Measurement Names  
+Discriptive measurement names were added to the data set **X**
+These were based on the original labels provided  in activity_labels.txt.
+The following transformations were applied:
+ * removing "()" to avoid possible confusion with fucntion calls
+ * replacing "-" with "." to avoid possible confusion with subtraction
+ * converting camel case to underscore, for ease of reading (e.g. fBodyBodyGyroJerkMag_std Vs f_body_body_gyro_jerk_mag_std)
+ * replacing  the leading "t_" with "time."
+ * replacing the leading "f_" with "freq."
+  
 #### Descriptive Activity Values 
-#### Descriptive Measurement Names
+
+#### Filtered Measurements
  
 ### Measurement list
 
