@@ -278,69 +278,69 @@ It contains a header row and 180 data rows,  with 68 columns:
 | ----- | --------------------------------------- | --------------------------- | --- |             
 | 1    |  activity                               |  The activity that was performed | WALKING<br> WALKING_UPSTAIRS<br> WALKING_DOWNSTAIRS<br> SITTING<br> STANDING<br> LAYING   | 
 | 2    |  subject_id                             |  The identifier of the subject who performed the activity | 1-30 |
-| 3   |                   average.time.body_acc.mean.x  |                     Average of time.body_acc.mean.x <br>    by activity and subject_id |  units unchanged   |
-| 4   |                   average.time.body_acc.mean.y  |                     Average of time.body_acc.mean.y <br>    by activity and subject_id |  units unchanged   |
-| 5   |                   average.time.body_acc.mean.z  |                     Average of time.body_acc.mean.z <br>    by activity and subject_id |  units unchanged   |
-| 6   |                    average.time.body_acc.std.x  |                      Average of time.body_acc.std.x <br>    by activity and subject_id |  units unchanged   |
-| 7   |                    average.time.body_acc.std.y  |                      Average of time.body_acc.std.y <br>    by activity and subject_id |  units unchanged   |
-| 8   |                    average.time.body_acc.std.z  |                      Average of time.body_acc.std.z <br>    by activity and subject_id |  units unchanged   |
-| 9   |                average.time.gravity_acc.mean.x  |                  Average of time.gravity_acc.mean.x <br>    by activity and subject_id |  units unchanged   |
-| 10  |                average.time.gravity_acc.mean.y  |                  Average of time.gravity_acc.mean.y <br>    by activity and subject_id |  units unchanged   |
-| 11  |                average.time.gravity_acc.mean.z  |                  Average of time.gravity_acc.mean.z <br>    by activity and subject_id |  units unchanged   |
-| 12   |                 average.time.gravity_acc.std.x  |                   Average of time.gravity_acc.std.x<br>    by activity and subject_id |  units unchanged   |
-| 13   |                 average.time.gravity_acc.std.y  |                   Average of time.gravity_acc.std.y<br>    by activity and subject_id |  units unchanged   |
-| 14   |                 average.time.gravity_acc.std.z  |                   Average of time.gravity_acc.std.z<br>    by activity and subject_id |  units unchanged   |
-| 15   |              average.time.body_acc_jerk.mean.x  |                Average of time.body_acc_jerk.mean.x<br>    by activity and subject_id |  units unchanged   |
-| 16   |              average.time.body_acc_jerk.mean.y  |                Average of time.body_acc_jerk.mean.y<br>    by activity and subject_id |  units unchanged   |
-| 17   |              average.time.body_acc_jerk.mean.z  |                Average of time.body_acc_jerk.mean.z<br>    by activity and subject_id |  units unchanged   |
-| 18   |               average.time.body_acc_jerk.std.x  |                 Average of time.body_acc_jerk.std.x<br>    by activity and subject_id |  units unchanged   |
-| 19   |               average.time.body_acc_jerk.std.y  |                 Average of time.body_acc_jerk.std.y<br>    by activity and subject_id |  units unchanged   |
-| 20   |               average.time.body_acc_jerk.std.z  |                 Average of time.body_acc_jerk.std.z<br>    by activity and subject_id |  units unchanged   |
-| 21   |                  average.time.body_gyro.mean.x  |                    Average of time.body_gyro.mean.x<br>    by activity and subject_id |  units unchanged   |
-| 22   |                  average.time.body_gyro.mean.y  |                    Average of time.body_gyro.mean.y<br>    by activity and subject_id |  units unchanged   |
-| 23   |                  average.time.body_gyro.mean.z  |                    Average of time.body_gyro.mean.z<br>    by activity and subject_id |  units unchanged   |
-| 24   |                   average.time.body_gyro.std.x  |                     Average of time.body_gyro.std.x<br>    by activity and subject_id |  units unchanged   |
-| 25   |                   average.time.body_gyro.std.y  |                     Average of time.body_gyro.std.y<br>    by activity and subject_id |  units unchanged   |
-| 26   |                   average.time.body_gyro.std.z  |                     Average of time.body_gyro.std.z<br>    by activity and subject_id |  units unchanged   |
-| 27   |             average.time.body_gyro_jerk.mean.x  |               Average of time.body_gyro_jerk.mean.x<br>    by activity and subject_id |  units unchanged   |
-| 28   |             average.time.body_gyro_jerk.mean.y  |               Average of time.body_gyro_jerk.mean.y<br>    by activity and subject_id |  units unchanged   |
-| 29   |             average.time.body_gyro_jerk.mean.z  |               Average of time.body_gyro_jerk.mean.z<br>    by activity and subject_id |  units unchanged   |
-| 30   |              average.time.body_gyro_jerk.std.x  |                Average of time.body_gyro_jerk.std.x<br>    by activity and subject_id |  units unchanged   |
-| 31   |              average.time.body_gyro_jerk.std.y  |                Average of time.body_gyro_jerk.std.y<br>    by activity and subject_id |  units unchanged   |
-| 32   |              average.time.body_gyro_jerk.std.z  |                Average of time.body_gyro_jerk.std.z<br>    by activity and subject_id |  units unchanged   |
-| 33   |                 average.time.body_acc_mag.mean  |                   Average of time.body_acc_mag.mean<br>    by activity and subject_id |  units unchanged   |
-| 34   |                  average.time.body_acc_mag.std  |                    Average of time.body_acc_mag.std<br>    by activity and subject_id |  units unchanged   |
-| 35   |              average.time.gravity_acc_mag.mean  |                Average of time.gravity_acc_mag.mean<br>    by activity and subject_id |  units unchanged   |
-| 36   |               average.time.gravity_acc_mag.std  |                 Average of time.gravity_acc_mag.std<br>    by activity and subject_id |  units unchanged   |
-| 37   |            average.time.body_acc_jerk_mag.mean  |              Average of time.body_acc_jerk_mag.mean<br>    by activity and subject_id |  units unchanged   |
-| 38   |             average.time.body_acc_jerk_mag.std  |               Average of time.body_acc_jerk_mag.std<br>    by activity and subject_id |  units unchanged   |
-| 39   |                average.time.body_gyro_mag.mean  |                  Average of time.body_gyro_mag.mean<br>    by activity and subject_id |  units unchanged   |
-| 40   |                 average.time.body_gyro_mag.std  |                   Average of time.body_gyro_mag.std<br>    by activity and subject_id |  units unchanged   |
-| 41   |           average.time.body_gyro_jerk_mag.mean  |             Average of time.body_gyro_jerk_mag.mean<br>    by activity and subject_id |  units unchanged   |
-| 42   |            average.time.body_gyro_jerk_mag.std  |              Average of time.body_gyro_jerk_mag.std<br>    by activity and subject_id |  units unchanged   |
-| 43   |              average.frequency.body_acc.mean.x  |                Average of frequency.body_acc.mean.x<br>    by activity and subject_id |  units unchanged   |
-| 44   |              average.frequency.body_acc.mean.y  |                Average of frequency.body_acc.mean.y<br>    by activity and subject_id |  units unchanged   |
-| 45   |              average.frequency.body_acc.mean.z  |                Average of frequency.body_acc.mean.z<br>    by activity and subject_id |  units unchanged   |
-| 46   |               average.frequency.body_acc.std.x  |                 Average of frequency.body_acc.std.x<br>    by activity and subject_id |  units unchanged   |
-| 47   |               average.frequency.body_acc.std.y  |                 Average of frequency.body_acc.std.y<br>    by activity and subject_id |  units unchanged   |
-| 48   |               average.frequency.body_acc.std.z  |                 Average of frequency.body_acc.std.z<br>    by activity and subject_id |  units unchanged   |
-| 49   |         average.frequency.body_acc_jerk.mean.x  |           Average of frequency.body_acc_jerk.mean.x<br>    by activity and subject_id |  units unchanged   |
-| 50   |         average.frequency.body_acc_jerk.mean.y  |           Average of frequency.body_acc_jerk.mean.y<br>    by activity and subject_id |  units unchanged   |
-| 51   |         average.frequency.body_acc_jerk.mean.z  |           Average of frequency.body_acc_jerk.mean.z<br>    by activity and subject_id |  units unchanged   |
-| 52   |          average.frequency.body_acc_jerk.std.x  |            Average of frequency.body_acc_jerk.std.x<br>    by activity and subject_id |  units unchanged   |
-| 53   |          average.frequency.body_acc_jerk.std.y  |            Average of frequency.body_acc_jerk.std.y<br>    by activity and subject_id |  units unchanged   |
-| 54   |          average.frequency.body_acc_jerk.std.z  |            Average of frequency.body_acc_jerk.std.z<br>    by activity and subject_id |  units unchanged   |
-| 55   |             average.frequency.body_gyro.mean.x  |               Average of frequency.body_gyro.mean.x<br>    by activity and subject_id |  units unchanged   |
-| 56   |             average.frequency.body_gyro.mean.y  |               Average of frequency.body_gyro.mean.y<br>    by activity and subject_id |  units unchanged   |
-| 57   |             average.frequency.body_gyro.mean.z  |               Average of frequency.body_gyro.mean.z<br>    by activity and subject_id |  units unchanged   |
-| 58   |              average.frequency.body_gyro.std.x  |                Average of frequency.body_gyro.std.x<br>    by activity and subject_id |  units unchanged   |
-| 59   |              average.frequency.body_gyro.std.y  |                Average of frequency.body_gyro.std.y<br>    by activity and subject_id |  units unchanged   |
-| 60   |              average.frequency.body_gyro.std.z  |                Average of frequency.body_gyro.std.z<br>    by activity and subject_id |  units unchanged   |
-| 61   |            average.frequency.body_acc_mag.mean  |              Average of frequency.body_acc_mag.mean<br>    by activity and subject_id |  units unchanged   |
-| 62   |             average.frequency.body_acc_mag.std  |               Average of frequency.body_acc_mag.std<br>    by activity and subject_id |  units unchanged   |
-| 63   |  average.frequency.body_body_acc_jerk_mag.mean  |    Average of frequency.body_body_acc_jerk_mag.mean<br>    by activity and subject_id |  units unchanged   |
-| 64   |   average.frequency.body_body_acc_jerk_mag.std  |     Average of frequency.body_body_acc_jerk_mag.std<br>    by activity and subject_id |  units unchanged   |
-| 65   |      average.frequency.body_body_gyro_mag.mean  |        Average of frequency.body_body_gyro_mag.mean<br>    by activity and subject_id |  units unchanged   |
-| 66   |       average.frequency.body_body_gyro_mag.std  |         Average of frequency.body_body_gyro_mag.std<br>    by activity and subject_id |  units unchanged   |
-| 67   | average.frequency.body_body_gyro_jerk_mag.mean  |   Average of frequency.body_body_gyro_jerk_mag.mean<br>    by activity and subject_id |  units unchanged   |
-| 68   |  average.frequency.body_body_gyro_jerk_mag.std  |    Average of frequency.body_body_gyro_jerk_mag.std<br>    by activity and subject_id |  units unchanged   |
+| 3   |                   average.time.body_acc.mean.x  |                     Average of<br>time.body_acc.mean.x <br>    by activity and subject_id |  units unchanged   |
+| 4   |                   average.time.body_acc.mean.y  |                     Average of<br>time.body_acc.mean.y <br>    by activity and subject_id |  units unchanged   |
+| 5   |                   average.time.body_acc.mean.z  |                     Average of<br>time.body_acc.mean.z <br>    by activity and subject_id |  units unchanged   |
+| 6   |                    average.time.body_acc.std.x  |                      Average of<br>time.body_acc.std.x <br>    by activity and subject_id |  units unchanged   |
+| 7   |                    average.time.body_acc.std.y  |                      Average of<br>time.body_acc.std.y <br>    by activity and subject_id |  units unchanged   |
+| 8   |                    average.time.body_acc.std.z  |                      Average of<br>time.body_acc.std.z <br>    by activity and subject_id |  units unchanged   |
+| 9   |                average.time.gravity_acc.mean.x  |                  Average of<br>time.gravity_acc.mean.x <br>    by activity and subject_id |  units unchanged   |
+| 10  |                average.time.gravity_acc.mean.y  |                  Average of<br>time.gravity_acc.mean.y <br>    by activity and subject_id |  units unchanged   |
+| 11  |                average.time.gravity_acc.mean.z  |                  Average of<br>time.gravity_acc.mean.z <br>    by activity and subject_id |  units unchanged   |
+| 12   |                 average.time.gravity_acc.std.x  |                   Average of<br>time.gravity_acc.std.x<br>    by activity and subject_id |  units unchanged   |
+| 13   |                 average.time.gravity_acc.std.y  |                   Average of<br>time.gravity_acc.std.y<br>    by activity and subject_id |  units unchanged   |
+| 14   |                 average.time.gravity_acc.std.z  |                   Average of<br>time.gravity_acc.std.z<br>    by activity and subject_id |  units unchanged   |
+| 15   |              average.time.body_acc_jerk.mean.x  |                Average of<br>time.body_acc_jerk.mean.x<br>    by activity and subject_id |  units unchanged   |
+| 16   |              average.time.body_acc_jerk.mean.y  |                Average of<br>time.body_acc_jerk.mean.y<br>    by activity and subject_id |  units unchanged   |
+| 17   |              average.time.body_acc_jerk.mean.z  |                Average of<br>time.body_acc_jerk.mean.z<br>    by activity and subject_id |  units unchanged   |
+| 18   |               average.time.body_acc_jerk.std.x  |                 Average of<br>time.body_acc_jerk.std.x<br>    by activity and subject_id |  units unchanged   |
+| 19   |               average.time.body_acc_jerk.std.y  |                 Average of<br>time.body_acc_jerk.std.y<br>    by activity and subject_id |  units unchanged   |
+| 20   |               average.time.body_acc_jerk.std.z  |                 Average of<br>time.body_acc_jerk.std.z<br>    by activity and subject_id |  units unchanged   |
+| 21   |                  average.time.body_gyro.mean.x  |                    Average of<br>time.body_gyro.mean.x<br>    by activity and subject_id |  units unchanged   |
+| 22   |                  average.time.body_gyro.mean.y  |                    Average of<br>time.body_gyro.mean.y<br>    by activity and subject_id |  units unchanged   |
+| 23   |                  average.time.body_gyro.mean.z  |                    Average of<br>time.body_gyro.mean.z<br>    by activity and subject_id |  units unchanged   |
+| 24   |                   average.time.body_gyro.std.x  |                     Average of<br>time.body_gyro.std.x<br>    by activity and subject_id |  units unchanged   |
+| 25   |                   average.time.body_gyro.std.y  |                     Average of<br>time.body_gyro.std.y<br>    by activity and subject_id |  units unchanged   |
+| 26   |                   average.time.body_gyro.std.z  |                     Average of<br>time.body_gyro.std.z<br>    by activity and subject_id |  units unchanged   |
+| 27   |             average.time.body_gyro_jerk.mean.x  |               Average of<br>time.body_gyro_jerk.mean.x<br>    by activity and subject_id |  units unchanged   |
+| 28   |             average.time.body_gyro_jerk.mean.y  |               Average of<br>time.body_gyro_jerk.mean.y<br>    by activity and subject_id |  units unchanged   |
+| 29   |             average.time.body_gyro_jerk.mean.z  |               Average of<br>time.body_gyro_jerk.mean.z<br>    by activity and subject_id |  units unchanged   |
+| 30   |              average.time.body_gyro_jerk.std.x  |                Average of<br>time.body_gyro_jerk.std.x<br>    by activity and subject_id |  units unchanged   |
+| 31   |              average.time.body_gyro_jerk.std.y  |                Average of<br>time.body_gyro_jerk.std.y<br>    by activity and subject_id |  units unchanged   |
+| 32   |              average.time.body_gyro_jerk.std.z  |                Average of<br>time.body_gyro_jerk.std.z<br>    by activity and subject_id |  units unchanged   |
+| 33   |                 average.time.body_acc_mag.mean  |                   Average of<br>time.body_acc_mag.mean<br>    by activity and subject_id |  units unchanged   |
+| 34   |                  average.time.body_acc_mag.std  |                    Average of<br>time.body_acc_mag.std<br>    by activity and subject_id |  units unchanged   |
+| 35   |              average.time.gravity_acc_mag.mean  |                Average of<br>time.gravity_acc_mag.mean<br>    by activity and subject_id |  units unchanged   |
+| 36   |               average.time.gravity_acc_mag.std  |                 Average of<br>time.gravity_acc_mag.std<br>    by activity and subject_id |  units unchanged   |
+| 37   |            average.time.body_acc_jerk_mag.mean  |              Average of<br>time.body_acc_jerk_mag.mean<br>    by activity and subject_id |  units unchanged   |
+| 38   |             average.time.body_acc_jerk_mag.std  |               Average of<br>time.body_acc_jerk_mag.std<br>    by activity and subject_id |  units unchanged   |
+| 39   |                average.time.body_gyro_mag.mean  |                  Average of<br>time.body_gyro_mag.mean<br>    by activity and subject_id |  units unchanged   |
+| 40   |                 average.time.body_gyro_mag.std  |                   Average of<br>time.body_gyro_mag.std<br>    by activity and subject_id |  units unchanged   |
+| 41   |           average.time.body_gyro_jerk_mag.mean  |             Average of<br>time.body_gyro_jerk_mag.mean<br>    by activity and subject_id |  units unchanged   |
+| 42   |            average.time.body_gyro_jerk_mag.std  |              Average of<br>time.body_gyro_jerk_mag.std<br>    by activity and subject_id |  units unchanged   |
+| 43   |              average.frequency.body_acc.mean.x  |                Average of<br>frequency.body_acc.mean.x<br>    by activity and subject_id |  units unchanged   |
+| 44   |              average.frequency.body_acc.mean.y  |                Average of<br>frequency.body_acc.mean.y<br>    by activity and subject_id |  units unchanged   |
+| 45   |              average.frequency.body_acc.mean.z  |                Average of<br>frequency.body_acc.mean.z<br>    by activity and subject_id |  units unchanged   |
+| 46   |               average.frequency.body_acc.std.x  |                 Average of<br>frequency.body_acc.std.x<br>    by activity and subject_id |  units unchanged   |
+| 47   |               average.frequency.body_acc.std.y  |                 Average of<br>frequency.body_acc.std.y<br>    by activity and subject_id |  units unchanged   |
+| 48   |               average.frequency.body_acc.std.z  |                 Average of<br>frequency.body_acc.std.z<br>    by activity and subject_id |  units unchanged   |
+| 49   |         average.frequency.body_acc_jerk.mean.x  |           Average of<br>frequency.body_acc_jerk.mean.x<br>    by activity and subject_id |  units unchanged   |
+| 50   |         average.frequency.body_acc_jerk.mean.y  |           Average of<br>frequency.body_acc_jerk.mean.y<br>    by activity and subject_id |  units unchanged   |
+| 51   |         average.frequency.body_acc_jerk.mean.z  |           Average of<br>frequency.body_acc_jerk.mean.z<br>    by activity and subject_id |  units unchanged   |
+| 52   |          average.frequency.body_acc_jerk.std.x  |            Average of<br>frequency.body_acc_jerk.std.x<br>    by activity and subject_id |  units unchanged   |
+| 53   |          average.frequency.body_acc_jerk.std.y  |            Average of<br>frequency.body_acc_jerk.std.y<br>    by activity and subject_id |  units unchanged   |
+| 54   |          average.frequency.body_acc_jerk.std.z  |            Average of<br>frequency.body_acc_jerk.std.z<br>    by activity and subject_id |  units unchanged   |
+| 55   |             average.frequency.body_gyro.mean.x  |               Average of<br>frequency.body_gyro.mean.x<br>    by activity and subject_id |  units unchanged   |
+| 56   |             average.frequency.body_gyro.mean.y  |               Average of<br>frequency.body_gyro.mean.y<br>    by activity and subject_id |  units unchanged   |
+| 57   |             average.frequency.body_gyro.mean.z  |               Average of<br>frequency.body_gyro.mean.z<br>    by activity and subject_id |  units unchanged   |
+| 58   |              average.frequency.body_gyro.std.x  |                Average of<br>frequency.body_gyro.std.x<br>    by activity and subject_id |  units unchanged   |
+| 59   |              average.frequency.body_gyro.std.y  |                Average of<br>frequency.body_gyro.std.y<br>    by activity and subject_id |  units unchanged   |
+| 60   |              average.frequency.body_gyro.std.z  |                Average of<br>frequency.body_gyro.std.z<br>    by activity and subject_id |  units unchanged   |
+| 61   |            average.frequency.body_acc_mag.mean  |              Average of<br>frequency.body_acc_mag.mean<br>    by activity and subject_id |  units unchanged   |
+| 62   |             average.frequency.body_acc_mag.std  |               Average of<br>frequency.body_acc_mag.std<br>    by activity and subject_id |  units unchanged   |
+| 63   |  average.frequency.body_body_acc_jerk_mag.mean  |    Average of<br>frequency.body_body_acc_jerk_mag.mean<br>    by activity and subject_id |  units unchanged   |
+| 64   |   average.frequency.body_body_acc_jerk_mag.std  |     Average of<br>frequency.body_body_acc_jerk_mag.std<br>    by activity and subject_id |  units unchanged   |
+| 65   |      average.frequency.body_body_gyro_mag.mean  |        Average of<br>frequency.body_body_gyro_mag.mean<br>    by activity and subject_id |  units unchanged   |
+| 66   |       average.frequency.body_body_gyro_mag.std  |         Average of<br>frequency.body_body_gyro_mag.std<br>    by activity and subject_id |  units unchanged   |
+| 67   | average.frequency.body_body_gyro_jerk_mag.mean  |   Average of<br>frequency.body_body_gyro_jerk_mag.mean<br>    by activity and subject_id |  units unchanged   |
+| 68   |  average.frequency.body_body_gyro_jerk_mag.std  |    Average of<br>frequency.body_body_gyro_jerk_mag.std<br>    by activity and subject_id |  units unchanged   |
