@@ -30,9 +30,9 @@ clean_data <- function(){
     ## The original UCI HAR activity labels are fit for purpose as they are.
   df_tidy_data$activity <- create_activity_column(df_merged_activities)  
   
-    ## Add a 'subject_id' column identifying the subject who performed the activity for each
+    ## Add a 'subject' column identifying the subject who performed the activity for each
     ##  measurement. 
-  df_tidy_data$subject_id <- df_merged_subjects$V1 
+  df_tidy_data$subject <- df_merged_subjects$V1 
   
     ## Write out the first tidy dataset
   write.table(df_tidy_data, "tidy_data_1.txt", row.names = F, sep="\t")
@@ -119,20 +119,28 @@ modify_feature_names <- function(df_features){
     ## Remove "()" to avoid possible confusion with fucntion calls in R
   new_names <- gsub("\\(\\)","",df_features$V2)
   
-    ## Replace "-" with "." to avoid possible confusion with subtraction in R
-  new_names <- gsub("-",".",new_names)
+    ## Remove "-" to avoid possible confusion with subtraction in R
+  new_names <- gsub("-","",new_names)
   
-    ## Convert camel case to underscore, becasue I think it's easier to read 
+    ## Convert camel case to underscore, because I think it's easier to read 
     ## (e.g. fBodyBodyGyroJerkMag_std Vs f_body_body_gyro_jerk_mag_std)
-  new_names <-  gsub("([A-Z])", "_\\L\\1", new_names, perl=T)
+  ## new_names <-  gsub("([A-Z])", "_\\L\\1", new_names, perl=T)
     ## Tidy up side effect of converting things like '.X' to ._x
-  new_names <-  gsub("\\._", "\\.", new_names, perl=T)
+  ## new_names <-  gsub("\\._", "\\.", new_names, perl=T)
   
-    ## Replace the leading "t_" with "time."
-  new_names <-  gsub("^t_", "time.", new_names, perl=T)
+    ## Replace "BodyBody" with "Body" 
+  new_names <- gsub("BodyBody","Body",new_names)
   
-    ## Replace the leading "f_" with "freq."
-  new_names <-  gsub("^f_", "frequency.", new_names, perl=T)
+    ## Replace the leading "t" with "time."
+  new_names <-  gsub("^t", "time", new_names, perl=T)
+  
+    ## Replace the leading "f" with "freq."
+  new_names <-  gsub("^f", "frequency", new_names, perl=T)
+  
+  
+  ## Complete the  camel case
+  new_names <- gsub("mean","Mean",new_names)
+  new_names <- gsub("std","Std",new_names)
   
     ## Add the new names as a new column to the data frame passed in df_features, and return it.
   df_features$new_names <- new_names
@@ -160,11 +168,11 @@ create_summary_dataframe <- function(df){
     ## We're using the plyr package to summarise the data set
   library(plyr)
   
-    ## Create a new data frame with the average of each column, grouped by $activity and $subject_id
-  new_df <- ddply(df,c("activity", "subject_id"), colwise(mean))
+    ## Create a new data frame with the average of each column, grouped by $activity and $subject
+  new_df <- ddply(df,c("activity", "subject"), colwise(mean))
   
-    ## Modify the column names of the new dataframe, except $activity and $subject_id, prefixing the original names with "average."
-  colnames(new_df)[3:68] <- paste("average", colnames(new_df)[2:67], sep=".")
+    ## Modify the column names of the new dataframe, except $activity and $subject, suffixing the original names with "Sverage."
+  colnames(new_df)[3:68] <- paste(colnames(new_df)[2:67],"Average",  sep="")
   new_df
   
 }

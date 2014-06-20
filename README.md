@@ -52,10 +52,11 @@ This is done using the function **select_features()**, which:
 4. Create descriptive feature names, cleaned versions of the UCI HAR feature labels, and add them to our filtered data frame.  
 **clean _data()** calls **modify_feature_names()** to do this, passing the dataframe previously returned by **select_features()**. The new feature names are based on the original ones in "UCI HAR Dataset/features.txt", but **modify_feature_names()** modifies them to facilitate their usage for analysis within R, by:  
     * removing "()" to avoid possible confusion with function calls
-    * replacing "-" with "." to avoid possible confusion with subtraction
-    * converting camel case to underscore, for ease of reading (e.g. fBodyBodyGyroJerkMag_std Vs f_body_body_gyro_jerk_mag_std)
-    * replacing  the leading "t_" with "time."
-     * replacing the leading "f_" with "freq."
+    * removing "-" to avoid possible confusion with subtraction
+    * replacing  the leading "t" with "time"
+    * replacing the leading "f" with "frequency"
+    * replacing the "BodyBody" with "Body" for naming consistency
+    * converting the resulting names to lower camel casefor ease of reading    
     * adding a column (**$new_names**) with these modified names to the dataframe provided as input, and returning it to the calling function.
 
 5. **clean _data()** then takes the new column from the dataframe returned by **modify_feature_names()** new column and uses it to populate the column names of the previously filtered and merged merged data set.
@@ -70,15 +71,15 @@ The original UCI HAR activity labels are fit for purpose as they are.
 
 7. **clean _data()** then adds this returned vector filtered and merged data set as a new column called **$activity**.
 
-8. Add a 'subject_id' column identifying the subject who performed the activity for each  measurement.  
-**clean_data()** does this simply by adding the first column of the dataframe returned by **merge_subjects()** in step 1 to the filtered and merged data set. The new column name is **$subject_id**
+8. Add a 'subject' column identifying the subject who performed the activity for each  measurement.  
+**clean_data()** does this simply by adding the first column of the dataframe returned by **merge_subjects()** in step 1 to the filtered and merged data set. The new column name is **$subject**
 
 9. Write out the first tidy dataset.  
 **clean _data()** uses  write.table() to writes this out to a file called "tidy_data_1.txt" in the current working directory.
 
 10. Create the second tidy dataset.  
 **clean _data()** calls **create_summary_dataframe()**, passing the data frame containing the first tidy dataset.  
-**create_summary_dataframe()** uses the **plyr** package to create a new data frame with the average of each column, grouped by the combination of $activity and $subject_id. It then modifies the column names of this new dataframe, except $activity and $subject_id, prefixing the original names with "average." Finally it returns the new data frame to the calling function.
+**create_summary_dataframe()** uses the **plyr** package to create a new data frame with the average of each column, grouped by the combination of $activity and $subject. It then modifies the column names of this new dataframe, except $activity and $subject, affixing "Average" to the original names. Finally it returns the new data frame to the calling function.
 
 11. Write out the second tidy dataset  
 **clean _data()** uses  write.table() to writes this out to a file called "tidy_data_2.txt" in the current working directory.
