@@ -191,14 +191,14 @@ While information rich, these original labels listed in **features.txt** have so
 1. R is likely removing to misinterpret names with "()" as function calls
 2. R is likely removing to misinterpret names with "-" as subtractions
 3. They are somewhat terse, especially in the domain component  (t, f)
-4. Some of the names are inconsistent with weach other and **features_info.txt**,  specifically the ones with a reduncant "Body" in them (e.g. f**BodyBody**GyroJerkMag-std())
+4. Some of the names are inconsistent with each other and **features_info.txt**,  specifically the ones with a reduncant "Body" in them. E.g. fBodyBodyGyroJerkMag-std()
 5. They do not comply fully with the style suggested in the week 4 lecture "Editing Text Variables" - all lower case when possible, without underscores, dots or whitespace.
     
 So, the following remedial transformations were applied:
 
 1. Removing "()" 
 2. Removing "-" 
-3. Replacing  the leading "t" with "time."
+3. Replacing  the leading "t" with "time" ;   Replacing  the leading "f" with "frequency"
 4. Replacing "BodyBody" with Body 
 
 Note that no transformation was applied to address the 5th issue identified above - the names contain upper case letters. Lower camel case asn been used because:
