@@ -169,7 +169,7 @@ The main data set **X** was filtered to remove all measurements that did not hav
 #### Descriptive Measurement Names  
 Discriptive measurement names were added to the main data set **X**  
 
-The original dataset has structured measurement labels. Summarizing **features_info.txt** above, the labels for the measures we have selected have the following structure:   
+The original dataset has structured measurement labels, listed in **features.txt**. Summarizing **features_info.txt** above, the labels for the measures we have selected have the following structure:   
 [domain][base measure]-[summarization]-[axis] e.g. fBodyAccJerk-mean()-X  
 with the following possible values for each component: 
 
@@ -186,7 +186,7 @@ with the following possible values for each component:
 | | BodyGyroMag | | |        
 | | BodyGyroJerkMag | | |  
 
-While information rich, these original labels  have some issues:
+While information rich, these original labels listed in **features.txt** have some issues:
 
 1. R is likely removing to misinterpret names with "()" as function calls
 2. R is likely removing to misinterpret names with "-" as subtractions
