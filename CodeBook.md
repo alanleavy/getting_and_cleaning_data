@@ -174,7 +174,7 @@ The original dataset has structured measurement labels. Summarizing **features_i
 with the following possible values for each component: 
 
 | domain | base measure | summarization | axis |
---------
+| --- |  --- | --- | --- | 
 | t | BodyAcc | mean() | |       
 | f | GraviyAcc | std() | |     
 | | BodyAccJerk | | |    
@@ -187,6 +187,7 @@ with the following possible values for each component:
 | | BodyGyroJerkMag | | |  
 
 While information rich, these original labels  have some issues:
+
 1. R is likely removing to misinterpret names with "()" as function calls
 2. R is likely removing to misinterpret names with "-" as subtractions
 3. They are somewhat terse, especially in the domain component  (t, f)
@@ -194,6 +195,7 @@ While information rich, these original labels  have some issues:
 5. They do not comply fully with the style suggested in the week 4 lecture "Editing Text Variables" - all lower case when possible, without underscores, dots or whitespace.
     
 So, the following remedial transformations were applied:
+
 1. Removing "()" 
 2. Removing "-" 
 3. Replacing  the leading "t" with "time."
