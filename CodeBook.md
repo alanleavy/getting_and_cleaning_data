@@ -161,7 +161,7 @@ The contents fo the following original files were concatenated together:
 * **X**: Measurements for each observation: train/X_train.txt and test/X_test.txt
 * **y**: The activity code for each observation: train/y_train.txt and test/y_test.txt
 * **subject**: The subjects perfoming each observed activity: train/subject_train.txt and test/subject_test.txt 
-*     
+  
 #### Filtered Measurements
 The main data set **X** was filtered to remove all measurements that did not have either "-std()" or "-mean()"" in their original names specified in features.txt. 
  
