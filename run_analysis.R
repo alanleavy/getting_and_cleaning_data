@@ -172,7 +172,7 @@ create_summary_dataframe <- function(df){
   new_df <- ddply(df,c("activity", "subject"), colwise(mean))
   
     ## Modify the column names of the new dataframe, except $activity and $subject, suffixing the original names with "Sverage."
-  colnames(new_df)[3:68] <- paste(colnames(new_df)[2:67],"Average",  sep="")
+  colnames(new_df)[3:68] <- paste(colnames(new_df)[3:68],"Average",  sep="")
   new_df
   
 }
