@@ -170,14 +170,14 @@ The main data set **X** was filtered to remove all measurements that did not hav
 Discriptive measurement names were added to the main data set **X**  
 
 The original dataset has structured measurement labels. Summarizing **features_info.txt** above, the labels for the measures we have selected have the following structure:   
-<domain><base measure>-<summarization>-<axis> e.g. fBodyAccJerk-mean()-X  
+[domain][base measure]-[summarization]-[axis] e.g. fBodyAccJerk-mean()-X  
 with the following possible values for each component: 
 
 | domain | base measure | summarization | axis |
 | --- |  --- | --- | --- | 
-| t | BodyAcc | mean() | |       
-| f | GraviyAcc | std() | |     
-| | BodyAccJerk | | |    
+| t | BodyAcc | mean() | X |       
+| f | GraviyAcc | std() | Y |     
+| | BodyAccJerk | | Z |    
 | | BodyGyro | | |       
 | | BodyGyroJerk | | |   
 | | BodyAccMag | | |         
